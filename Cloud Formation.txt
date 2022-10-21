@@ -1,0 +1,35 @@
+#####################
+Cloud Formation (IaaC)
+#####################
+
+-> AWS providing infrastructure as a service ( IaaS )
+
+-> We can create resources in AWS cloud in multiple ways
+
+1) Web Console  (GUI)
+
+2) AWS CLI
+
+3) Cloud Formation ( IaaC)
+
+4) Terrafom (IaaC) ---> Third Party S/w & supports for all most all cloud platforms
+
+
+=> AWS CloudFormation is an infrastructure as code (IaC) service that allows you to easily model, provision, and manage AWS and third-party resources.
+
+=> We can write Cloud Formation scripts in 2 ways
+
+1) YAML
+
+2) JSON
+
+
+Note: We can create YAML / JSON files in AWS Cloud Formation Designer
+
+
+=> We can access Cloud Formation Templates using below URL
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-west-2.html
+
+
+

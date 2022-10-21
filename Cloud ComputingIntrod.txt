@@ -1,0 +1,50 @@
+What is Cloud Computing?
++++++++++++++++++++++++
+
+-> Providing on-demanded IT resources over the internet is called as Cloud Computing.
+
+-> There are several cloud providers are available in the market to provide resources over internet 
+	(AWS, Azure, GCP, Salesforce)
+
+-> IT Resource means, computing, network, power, security, storage, servers etc...
+
+
+If you want to deliver one project to client, we need to setup infrastructure
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1) We have to purchase computers
+2) We have to purchase Web servers
+3) We have to purchase Database Servers
+4) We have to purchase Network
+5) We have to purchase Storage
+6) We have to purchase Power & Power Backup
+7) We need to setup Server room
+8) We need to setup Air Conditioner (AC)
+
+9) We need to hire Network Admin to setup network
+10) We need to hire Server admin to setup servers
+11) We need to hiere DB admin to setup Database
+
+12) We need to take a room for rent
+13) We need a security guard to monitor our server room
+14) We need to keep high security for our server room
+
+
+-> Setting up 'application infrastructure' is costly operation and it is time taking process.
+
+-> Instead of we are purchasing and setting up infrastructure we can take the help of Cloud Providers.
+
+-> Cloud Providers are available in the market to provide infrastructure for rent on 'Pay As You Go' Model.
+
+    (Note: Use services and pay the money for use)
+
+      Ex: Credit cards, post paid bills etc...
+
+
+Example : When we have function in our house we are not going to purchase chairs and tables. We will take them for rent and will use for our function. After the function we will return that material to the owner and will pay rent amount for usage.
+
+-> Similary whatever the infrastructure (machines, servers, network, power, storage) required for our application we can take for rent instead of purchasing.
+
+-> How much we use that much we need to pay for them (Pay As You Go Model)
+
+-> AWS is one of the famous cloud provider available in the market which will provide IT infrastructure for Rent.

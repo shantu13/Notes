@@ -1,0 +1,89 @@
+##################
+Elastic Beanstalk
+#################
+
+
+-> End-to-end web application management services in AWS
+
+-> In AWS, Elastic Beanstalk provides Platform As  a Service (PaaS) 
+
+-> Easily we can run our web aplications on AWS cloud using Elastic Beanstalk service.
+
+-> We just need to upload our project code to Elastic Beanstalk it will take care of deployment
+
+-> Elastic Beanstack will take care of softwares and servers which are required to run our application.
+
+-> Elastic Beanstalk will take care of deployment, capacity provisioning, load balancer and auto scaling
+
+
+-> To deploy one java web application manually we need to perform below operations
+
+1) Create Security Group
+
+2) Create Network
+
+3) Create Virtual Machine (s)
+
+4) Install Java software in Virtual machine 
+
+5) Install Webserver to run java web application
+
+6) Deploy application to server
+
+7) Re-start the server
+
+8) Create LBR
+
+9) Create AutoScaling etc...
+
+
+-> AWS providing infrastructure, we are creating platform using AWS infrastructure to run our java application (IaaS Model)
+
+
+=> Instead of we are preparing platform to run our application, we can use Elastic Beanstalk service to run our web applications.
+
+=> Elastic Beanstalk is providing Platform as a service.
+
+
++++++++++++++++++++++++++++++
+Advantages with Elastic Beanstalk
++++++++++++++++++++++++++++++
+
+1) Fast and simple to begin
+
+2) Developer productivity
+
+3) Impossible to outgrow
+
+4) Complete resource control
+
+
+++++++++++++++++++++++++++
+Elastic Beanstalk Pricing
++++++++++++++++++++++++++
+
+There’s no additional charge for Elastic Beanstalk. You pay for Amazon Web Services resources that we create to store and run your web application, like Amazon S3 buckets and Amazon EC2 instances.
+
+
++++++++++++++++++++++++++++++++++++++++++
+Procedure to deploy java-spring-boot-application
+++++++++++++++++++++++++++++++++++++++++++
+
+
+1) Create one application in Beanstalk
+2) Choose Platform as Java
+3) Select Upload Your Code option and upload spring-boot-jar file
+4) Once environment got created -> Go to Configuration -> Go to Software -> Add PORT as 8080
+
+-> Once Environment got refreshed access your application using URL given by Beanstalk
+
+
+
+
+
+
+
+
+
+
+

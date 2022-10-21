@@ -1,0 +1,28 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+RDS -- relational database
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+In the RDS sql query will be run
+Example - select, insert etc
+
+There are 2 types of DB
+1. RDS  -- FB,Linkedin,naukri (Mysql, Oracle, Postgres etc) 
+2. Non RDS  -- whatsapp, google map, real time DB (Dynamodb, mongodb)
+
+Steps to create DB
+
+1. Open RDS dashboard
+2. Click on  create DB
+3. Select only standard create because it will give security backup etc
+4. Select MySql
+5. MySql Version choose latest one
+6. Choose free tier
+7. Insert DB name, username, password
+8. DB instance class
+9. Storage like 20 GB minimum and you can enable auto scalling to set the max limit
+10. Compute resource, Network type  and DB subnet (choose the default only)
+11. In our case only public accesss should be yes
+12 Click on create DB.
+13 Download Mysql workench to connect to DB (https://dev.mysql.com/downloads/workbench/)
+
+note- In security group of RDS always allow Mysql in the inbound rule

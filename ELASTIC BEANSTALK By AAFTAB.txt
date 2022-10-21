@@ -1,0 +1,22 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Elastic Beanstalk - it is use for testing purpose only
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+It is use to deploy the web application end to end means EC2, RDS will deploy automaticaly
+
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/tutorials.html
+
+Sample to download code to deploy in Beanstalk
+
+Steps to create Beanstalk
+
+1. Create Application
+2. Name and tags of application
+3. Choose platform (in our case we are choosing php)
+4. Application code- upload your code
+5. Choose local to upload 
+6. Click on create application
+
+
+note-  another sample to deploy wordpress require rds https://wordpress.org/download/
+reference-  https://www.tothenew.com/blog/aws-elastic-beanstalk-php/

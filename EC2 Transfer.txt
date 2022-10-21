@@ -1,0 +1,42 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+EC2- transfer
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+AWS support EBS (Elastic block storage ) volume (storage)
+
+In linux the volume is looks like
+sda --- first disk
+sdb --- second disk
+sdc -- third disk
+
+-----------------------------------------------
+Add the additional volume in the existing instance
+
+1. Check in which zone the instance in running
+2. In that same AZ (availablity zone) create the volume
+3. On Ec2 dashboard click on Volume
+4. Create volume and choose the size and AZ of that volume and create it
+5. Right click on the volume and click on attach disk and select the instance and attach.
+
+
+++++++++++++++++++++++++++++++++++++
+Transfer the volume
+
+1. From Ec2 dashboard click on volume and right click on additional volume
+2. Create snapshot
+3. Go to snapshot and right click on it and copy snapshot to another region (in our case ohio). 
+4. Change the region and go to the snapshot and right click on it and create the volume (note: volume should be created in same AZ wherever your instance is running)
+5. Right click on volume and attached to the instance.
+---------------------------------------------------------------
+IP address
+Types of IP
+OSI layer  (network layer and application layer)
+Switch
+router 
+
+
+
+
+
+
+
+

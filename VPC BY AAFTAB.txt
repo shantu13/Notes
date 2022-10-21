@@ -1,0 +1,38 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+VPC peering, cloud front, cloud formation
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+VPC peering is used to join two different vpc either same region or account or different region or account
+
+https://docs.databricks.com/_images/aws-vpc-peer-diagram.png
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Cloud front (CDN- content delivery network)
+
+Provide the data to the customers that are belong from different locations. 
+Cloud front will create edge location and customer hit the url of edge locations
+
+
+Steps to create edge location
+1. S3 bucket and upload some data and make it public
+2. Open Cloud front dashboard
+3. Select origin in our case it is s3
+4. Choose path
+5. Setting to price in our case it is north ,america
+6. Click on create distribution
+Additionally you can block specific countries also from Geographic restriction tab
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Cloud formation - creating template
+
+Creating a template to deploy entire infrastrucure on a single click rather than doing manually
+
+Steps to create cloud fromation
+
+1. Click on create a stack
+2. choose use a sample template
+3. Select wordpress blog
+4. Enter stack name, DB details like user and password , select keypair and click on next button
+5. select rollback and click on create stack
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

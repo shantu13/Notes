@@ -1,0 +1,38 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Cloud watch
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Example of on premises - Grafana, Nagios
+
+Cloud watch is use to monitor the servers.
+Note- Difference between logs and events
+1.It shows both activity of your servers but logs shows activity of resources and events shows activity of account
+
+Implement cloud watch
+
+1.Open cloud watch dashboard after launching an ec2 instance
+2. Create alarm
+3. Enter matric name , Statistics like Max or minimum etc
+4. select threshold type  static
+5. Whenever CPUUtilization is... either greater or less than etc
+6. Enter number of matchand click on nect button
+7. Send notification type and mention email id 
+8. Ec2 action either stop or terminate (Auto scalling is optional)
+9. Click on next and type alarm name and description and click on next button
+10. Click on create alarm
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Autoscalling related to ec2 instance
+
+1. Create AMI image from ec2 dashboard
+2. ConfigureLaunch configuration, click on create launch configuration
+3. Type name and select AMI image, select instance type
+4. Select security group and keypair
+5. Configure auto scalling group , select alunch configuration and click on action and create auto scalling group
+6. Enter name, enter vpc zone click on next button
+7. Load balancer which is optional
+8. Choose desired size
+9 choose scalling policies
+10 click next upto to review and click on create button
+

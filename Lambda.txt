@@ -1,0 +1,22 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Lambda function -- serverless deployment
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+If we want to perform any operation in the AWS infrastructure using code at that time we will use lambda function
+note- whenever you execue teh code only that time the execution is chargable. Storing the code is totally free of cost
+
+Write a code in lambda function that will create a backup of all the volumes from all the region
+
+1. Create a roles from AWS IAM
+2.  Click on create role
+3. Choose Lambda function from drop down and choose EC2
+4. Select ec2 full access
+5. Name in our case it lambda_access and create the role
+6. Launch ec2 instance with proper tags
+7. Create the Lambda function
+8. Select Author from scratch
+9. Function name and choose runtime in our case it is Python 3.8
+10. Choose permission and from drop down will select lambda_acess role and click on create function
+11. Write the code and click on deploy and test it.
+
+https://medium.com/nerd-for-tech/ebs-snapshot-management-using-aws-lambda-and-cloudwatch-d961fdbe3772

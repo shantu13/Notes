@@ -1,0 +1,46 @@
++++++++++++++++++++++++++++++++++++
+Hosting Static Website using HTTPD Server
+++++++++++++++++++++++++++++++++++++
+
+$ sudo yum update -y
+
+$ sudo yum install httpd
+
+$ sudo systemctl start httpd
+
+=> Then access EC2 VM public IP in browser
+
+Note: We need to enable HTTP : 80 port in Security group
+
+=> To customize website content we can create "index.html" in  "/var/www/html" directory
+
+$ cd /var/www/html
+
+$ sudo vi index.html
+
+<h1> Welcome to Ashok IT</h1>
+<h2> Leading Software Training Institute in Hyderabad</h2>
+<h3>Contact Us: +91-9985396677</h3>
+
+Note: Save and close the file
+
+=> When we refresh our browser it will display our content in web page
+
+
++++++++++++++++++++++++++
+What is User Data in EC2 ?
++++++++++++++++++++++++++
+
+-> User Data is used to execute the script when EC2 instance launched for first time
+
+-> We can say User Data is a default script to execute when EC2 instance launched
+
+Note: When we stop and start our EC2 then User Data will not execute
+
+
+#! /bin/bash
+sudo su
+yum install httpd -y
+cd /var/www/html
+echo "<html><h1>Welcome to Ashok IT</h1></html>" > index.html
+service httpd start

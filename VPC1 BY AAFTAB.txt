@@ -1,0 +1,42 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+VPC  --- virtual private computing  (networking)
+IPaddress  system 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Steps to create the VPC
+
+1. Open VPC from dashboard and click on create VPC
+2. Resources - VPC only
+3. Tags
+4. IPV4 CIDR (choose IPv4 CIDR manual input)
+5. IPV4 CIDR 192.168.0.0/16
+     10.
+     172. 
+     192.
+6. click in create vpc
+7. create subnet-
+8. choose vpc id
+9. ipv4 block  192.168.3.0/24
+10. click on create subnet
+11. repeat 3 times for all zones
+12. Create Internet gateways and attch to custom VPC
+13. create route tables, name customroute
+14. Select our VPC and create route tables
+15. Edit the route table and edit the routes and adding route in our case 0.0.0.0/0 and Internet gateway and select our custom gateway and set this route table to main
+
+
+---------------------------------------------------------------
+Difference between security group and NACL (network access control list)
+ sg- is a instance specific
+ nacl- is a vpc specific 
+
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario1.html
+
+----------------------------------------------------------------
+
+NAT -- network address transalation (use to mask the ip address)
+
+Internet GW
+NAT GW 
+VPN GW
+   

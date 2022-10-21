@@ -1,0 +1,78 @@
+###########
+Dynamo DB
+###########
+
+-> Databases we can classify into 2 types
+
+1) SQL Databases (Relational Databases)
+
+2) No-SQL Databases
+
+
+-> SQL databases are used to store the data which is having fixed structure
+-> SQL databases will represent data in table format with rows & columns
+-> The data structure is fixed here (no.of columns are fixed in table)
+-> Data will have relationships
+
+	Ex: Oracle, MySQL, SQLServer, PostGreSQL etc.......
+
+-> To work with Relational Databases we have "RDS" service in the AWS
+
+-> RDS is fully managed service in "AWS"
+
+
+-> No-SQL means Not Only SQL
+-> No-SQL databases are used to deal with semi-structured & un-structured data
+-> In No-SQL databases the structure of the data is not fixed
+
+  Ex :  Dynamo DB, Mongo DB, Hive, Cassandra etc....
+
+-> Amazon DynamoDB is a fully managed proprietary NoSQL database service that supports key–value and document data structures and is offered by Amazon.com
+
+
+
+
+1) What is Cloud Computing
+2) Advantages of Cloud Computing
+3) IaaS vs PaaS vs SaaS
+4) AWS Introduction
+5) AWS services overview
+6) Regions & Availability Zones
+7) EC2
+8) EBS (Volumes & Snapshots)
+9) Load Balancer
+10) Auto Scaling
+11) S3 Buckets
+12) EFS
+13) RDS
+14) Route S3
+15) IAM 
+16) VPC 
+17) Elastic Beanstalk
+18) ECS
+19) Cloud Watch
+20) SNS, SES & SQS
+21) Dynamo DB
+21) AWS Lambda
+22) Cloud Formation
+23) AWS CLI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

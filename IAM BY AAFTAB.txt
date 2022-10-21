@@ -1,0 +1,49 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+IAM  ---  Programmatic access (Access keys (access key ID and secret access key))
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Purpose is to login AWS account via programmatically
+
+
+Steps to create Access key secret key
+1. CLick on IAM console
+2. Click on Quick links
+3. Click on Access keys (access key ID and secret access key)
+4. Create keys
+
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html   (To install AWS cli in Linux/Windows/MAC)
+
+1. Download AWS CLI
+2. Install it
+3. Open Command line
+4. aws --version (if you see the version means aws install sucessfully)
+5 aws configure
+   Access key---
+   Secret key---
+   Default region---
+   Output format---
+
+Commands to work on s3
+
+1. aws s3 ls  -- to list the bucket
+2. aws s3 mb s3://aaftabtest --- create a bucket having name aaftabtest
+3. aws s3 cp File_name.txt s3://aaftabtest   --- upload the file
+4. aws s3 cp "AWS session 4.txt" s3://aaftabtest123123
+    upload: .\AWS session 4.txt to s3://aaftabtest123123/AWS session 4.txt
+
+5.aws s3 ls s3://aaftabtest123123
+    2022-08-24 07:35:00       1466 AWS session 3.txt
+    2022-08-24 07:36:38       1929 AWS session 4.txt
+
+6. aws s3 cp s3://aaftabtest123123/"AWS session 3.txt" .    ----- download the file
+   download: s3://aaftabtest123123/AWS session 3.txt to .\AWS session 3.txt
+
+
+7. aws s3 cp s3://aaftabtest123123/"AWS session 3.txt" s3://anotheraaftab   --- copy files from one bucket to another bucket
+
+8. aws s3 cp  s3://aaftabtest123123/  s3://anotheraaftab/ --recursive --- copy all files from one bucket to another bukcet
+
+9. aws s3 rm s3://aaftabtest123123/"AWS session 3.txt"   -- delete file from bucket
+
+10. s3 rm s3://aaftabtest123123/  --recursive  --- delete all files from bucket
+
+11. s3 rb s3://aaftabtest123123/   --- delete/remove bucket

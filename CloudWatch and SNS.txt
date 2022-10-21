@@ -1,0 +1,40 @@
+++++++++++++++++++
+Amazon Cloud Watch
+++++++++++++++++++
+
+->  Application and Infrastructure Monitoring service
+
+-> Amazon CloudWatch is a component of Amazon Web Services that provides monitoring for AWS resources and the customer applications running on the Amazon infrastructure.
+
+-> CloudWatch enables real-time monitoring of AWS resources such as Amazon Elastic Compute Cloud (EC2) instances, Amazon Elastic Block Store (EBS) volumes, Elastic Load Balancing and Amazon Relational Database Service (RDS) instances. 
+
+-> The application automatically collects and provides metrics for CPU utilization, latency and request counts. 
+
+-> Users can also stipulate additional metrics to be monitored, such as memory usage, transaction volumes or error rate.
+
+
+
+Cloud Watch & SNS - Lab Task
+++++++++++++++++++++++++++++++
+
+1) Create SNS Topic (ashokit_sns_topic)
+
+2) Configure Email Subscription in SNS Topic (Confirm Subscription recieved in email)
+
+3) Go To Ec2 -> Actions -> Monitoring and Troubleshoot -> Cloud Watch Alarsm -> Create cloud watch with Alarm
+
+  Alarm Trigger Condition : If given threshold reaches send notification to SNS
+  Threshold : Avg CPU >= 50%
+
+4) Connect to EC2 instance
+
+5) Increase load on the EC2 instance using "stress" software
+
+  $ sudo amazon-linux-extras install epel -y
+  $ sudo yum install stress -y
+  $ uptime
+  $ sudo stress --cpu 8 -v --timeout 180s
+  $ uptime
+
+6) Observe the behaviour of Cloud Watch / Alaram / SNS  
+    (We should get Email Notification)

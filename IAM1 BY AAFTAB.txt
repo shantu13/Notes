@@ -1,0 +1,22 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+IAM  (Identity and access management)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1.  Click on IAM
+2. Click on user and enter user name
+3. Select AWS credentails either console or programatic
+4. Console password
+5. Next permission
+6. Attaching the policies in our case it should be Ec2 full access
+7. To check the user credentials login again with IAM user that we created in our case it is student
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+MFA -- Multi factor authentication
+
+Additional security we are providing the MFA
+
+1. Click on Activate MFA
+2. Select Virtual MFA
+3. Install google authenticator from your mobile phone
+4. Scan the QR code from google authenticator app and type 2 consecative MFA

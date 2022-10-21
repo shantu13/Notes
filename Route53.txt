@@ -1,0 +1,25 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Route53 - help to map the domain name with the aws services ip address
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+DNS server - Whenever we enter the url like google.com it will convert the hostname into ipaddress.
+
+Port number of DNS is 53
+
+Steps to configure the route 53.
+
+1. Create the s3 bucket and name is the same as domain name in our case it is aaftabtest.tk and upload the file and make it public.
+  note- Dont forgot to enable static bucket
+2. To buy free domain create account on freenom.com
+3. Click on services and Register a new Domain
+4. Type custom name in our case it is aaftabtest and choose .tk domain.
+5. Click on the Continue button and click on complete order.
+6. Click on Hosted zone from the route53 service
+7. Enter domain name in our case it is aaftabtest.com and click on create hosted zone and note the NS entries in our case it is.
+  	ns-423.awsdns-52.com
+	ns-533.awsdns-02.net
+	ns-1910.awsdns-46.co.uk
+	ns-1507.awsdns-60.org
+8. Open freenom  and click on Manage tools and click on Nameservers and enter the above NS entries
+9. Open route 53 and click on create record and choose A record and enable Alias and choose s3 and choose your bucket from dropdown menu and click on create records.
+
